@@ -27,6 +27,7 @@ import mercato from "./company/mercato.png";
 import telesales from "./company/telesales.png";
 
 import calorieTracker from "./calorieTracker.png";
+import spacex from "./spacex.png";
 import weatherApp from "./weatherApp.png";
 import spotify from "./spotify.png";
 import special from "./special.png";
@@ -71,6 +72,7 @@ export {
   mercato,
   telesales,
   calorieTracker,
+  spacex,
   weatherApp,
   spotify,
   special,

@@ -20,6 +20,7 @@ import {
   mercato,
   telesales,
   calorieTracker,
+  spacex,
   weatherApp,
   spotify,
   special,
@@ -202,6 +203,25 @@ const projects = [
     ],
     image: calorieTracker,
     source_code_link: "https://calorie-tracker-fysumk1jo-fatmawafy.vercel.app/",
+  },
+  {
+    name: "SpaceX",
+    tags: [
+      {
+        name: "HTML5",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "css3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: spacex,
+    source_code_link: "https://fatmawafy.github.io/SpaceX/",
   },
   {
     name: "Weather App",
