@@ -17,8 +17,8 @@ import {
   github,
   gulp,
   teleperformance,
-  mercato,
-  telesales,
+  iti,
+  depi,
   calorieTracker,
   spacex,
   weatherApp,
@@ -59,6 +59,8 @@ import {
   goodreads,
   swifthub,
   exam,
+  portfolio,
+  portfolio2,
 } from "../assets";
 
 export const navLinks = [
@@ -222,51 +224,39 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Full-Stack Developer Intern",
+    company_name: "Information Technology Institute (ITI)",
+    icon: iti,
+
+    date: "Nov 2024 – May 2025",
+    points: [
+      "Developed full-stack applications using React, Next.js, Django, and PostgreSQL.",
+      "Focused on real-time data processing, query optimization, and performance enhancement.",
+      "Collaborated with a team to deliver scalable and maintainable software solutions.",
+    ],
+  },
+  {
+    title: "React Web Developer Intern",
+    company_name: "Digital Egypt Pioneers Initiative (DEPI)",
+    icon: depi,
+
+    date: "May 2024 – Oct 2024",
+    points: [
+      "Designed and optimized dynamic UI components using React.",
+      "Improved state management efficiency with Redux and reduced re-rendering by 30%.",
+      "Enhanced front-end performance and ensured responsive design across devices.",
+    ],
+  },
+  {
     title: "Customer Service Representative",
     company_name: "Teleperformance",
     icon: teleperformance,
-    iconBg: "#3366cc",
+
     date: "Feb 2022 – Jul 2022",
     points: [
-      "Coordinated communication between customers and the company to ensure their needs are met.",
-      "Managed customer inquiries and effectively resolved issues.",
-      "Learned negotiation skills and adeptly dealt with various personality types.",
-    ],
-  },
-  {
-    title: "Inventory Accountant",
-    company_name: "Mercato Misr",
-    icon: mercato,
-    iconBg: "#28a745",
-    date: "Aug 2021 – Feb 2022",
-    points: [
-      "Managed accounting records and analyzed financial reports.",
-      "Implemented effective strategies for inventory management.",
-      "Dealt with daily accounting challenges efficiently.",
-    ],
-  },
-  {
-    title: "Private Tutoring Center Assistant",
-    company_name: "Al-Shehab Center",
-    icon: mercato,
-    iconBg: "#3366cc",
-    date: "Sep 2020 – Jul 2021",
-    points: [
-      "Assisted in managing a private tutoring center providing academic support to high school students.",
-      "Handled financial transactions, issuing session coupons, and managing student attendance.",
-      "Calculated and processed payments for tutors based on student attendance.",
-    ],
-  },
-  {
-    title: "Telesales",
-    company_name: "ECCO Outsourcing",
-    icon: telesales,
-    iconBg: "#dc3545",
-    date: "Aug 2018 – Jan 2019",
-    points: [
-      "Engaged in telesales activities to promote and sell products or services.",
-      "Effectively communicated product features and benefits to potential customers.",
-      "Met sales targets and contributed to the overall success of the sales team.",
+      "Resolved 50+ customer interactions daily via live chat with a 95% resolution rate.",
+      "Managed multiple conversations simultaneously with a 20% boost in response efficiency.",
+      "Developed strong communication and time management skills in a fast-paced environment.",
     ],
   },
 ];
@@ -365,6 +355,17 @@ const projects = [
     ],
     image: calorieTracker,
     source_code_link: "https://calorie-tracker-fysumk1jo-fatmawafy.vercel.app/",
+  },
+  {
+    name: "Portfolio",
+    tags: [
+      {
+        name: "React",
+        color: "react-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://portfolio-fatmawafys-projects.vercel.app/",
   },
   {
     name: "E-commerce",
@@ -521,6 +522,21 @@ const projects = [
     ],
     image: compsition,
     source_code_link: "https://fatmawafy.github.io/Composition/",
+  },
+  {
+    name: "Portfolio",
+    tags: [
+      {
+        name: "HTML5",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "css3",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: portfolio2,
+    source_code_link: "https://fatmawafy.github.io/portofolio-Lab3/",
   },
   {
     name: "FoodHut",

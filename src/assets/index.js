@@ -37,8 +37,8 @@ import agile from "./tech/agile.png";
 import fastapi from "./tech/fastapi.png";
 
 import teleperformance from "./company/teleperformance.png";
-import mercato from "./company/mercato.png";
-import telesales from "./company/telesales.png";
+import iti from "./company/iti.ico";
+import depi from "./company/depi.png";
 
 import calorieTracker from "./calorieTracker.png";
 import spacex from "./spacex.png";
@@ -60,6 +60,8 @@ import task from "./task.png";
 import goodreads from "./goodreads.png";
 import swifthub from "./swifthub.png";
 import exam from "./exam.png";
+import portfolio from "./portfolio.png";
+import portfolio2 from "./portfolio2.png";
 
 import linkedin from "./linkedin.png";
 import whatsapp from "./whatsapp.png";
@@ -91,9 +93,9 @@ export {
   tailwind,
   typescript,
   threejs,
+  iti,
+  depi,
   teleperformance,
-  mercato,
-  telesales,
   calorieTracker,
   spacex,
   weatherApp,
@@ -133,4 +135,6 @@ export {
   goodreads,
   swifthub,
   exam,
+  portfolio,
+  portfolio2,
 };
