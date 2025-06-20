@@ -14,7 +14,8 @@ const Stars = (props) => {
     ref.current.rotation.y -= delta / 20;
   });
 
-  const sphere = random.inSphere(new Float32Array(6000), { radius: 1.2 });
+  // const sphere = random.inSphere(new Float32Array(6000), { radius: 1.2 });
+  const sphere = random.inSphere(new Float32Array(4000), { radius: 1.2 });
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
@@ -33,8 +34,18 @@ const Stars = (props) => {
 const StartCanvas = () => {
   return (
     <div className='w-full h-auto absolute inset-0 z-[-1]'>
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      {/* <Canvas camera={{ position: [0, 0, 1] }} >
         <Suspense fallback={null}>
+          <Stars />
+        </Suspense>
+
+        <Preload all />
+      </Canvas> */}
+      <Canvas
+        camera={{ position: [0, 0, 1] }}
+        dpr={[1, 1.5]} // مهم جداً للتسريع
+      >
+        <Suspense fallback={<CanvasLoader />}>  
           <Stars />
         </Suspense>
 

@@ -1,15 +1,13 @@
 /*eslint-disable */
 import { BrowserRouter } from "react-router-dom";
-import {
-  About,
-  Experience,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  Contact,
-  StarsCanvas,
-} from "./components";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Tech from "./components/Tech";
+import Works from "./components/Works";
+import Contact from "./components/Contact";
+import StarsCanvas from "./components/canvas/Stars";
 
 const App = () => {
   return (

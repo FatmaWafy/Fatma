@@ -37,6 +37,28 @@ import {
   Github,
   download,
   MyResume,
+  nextjs,
+  redux,
+  python,
+  django,
+  mongo,
+  mysql,
+  postgre,
+  docker,
+  figma,
+  aws,
+  flask,
+  fastapi,
+  linux,
+  agile,
+  popcorn,
+  forkify,
+  movieapp,
+  ecommerce,
+  task,
+  goodreads,
+  swifthub,
+  exam,
 } from "../assets";
 
 export const navLinks = [
@@ -90,7 +112,6 @@ const technologies = [
     name: "CSS 3",
     icon: css,
   },
-
   {
     name: "JavaScript",
     icon: javascript,
@@ -111,13 +132,51 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
+
   {
     name: "React JS",
     icon: reactjs,
   },
   {
+    name: "Redux",
+    icon: redux,
+  },
+  {
+    name: "NEXT JS",
+    icon: nextjs,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+  {
+    name: "Flask",
+    icon: flask,
+  },
+  {
+    name: "FastAPI",
+    icon: fastapi,
+  },
+  {
+    name: "MongoDB",
+    icon: mongo,
+  },
+
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgre,
   },
   {
     name: "Three JS",
@@ -138,6 +197,26 @@ const technologies = [
   {
     name: "Pug.js",
     icon: pug,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "Figma",
+    icon: figma,
+  },
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Linux",
+    icon: linux,
+  },
+  {
+    name: "Agile",
+    icon: agile,
   },
 ];
 
@@ -194,6 +273,89 @@ const experiences = [
 
 const projects = [
   {
+    name: "ITI Examination System",
+    tags: [
+      {
+        name: "Next.js",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "green-text-gradient",
+      },
+    ],
+    image: exam,
+    source_code_link: "https://examsystem-hazel.vercel.app/",
+  },
+  {
+    name: "SwiftHub",
+    tags: [
+      {
+        name: "Next.js",
+        color: "violet-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: swifthub,
+    source_code_link: "https://swifthub-drab.vercel.app/",
+  },
+  {
+    name: "Goodreads",
+    tags: [
+      {
+        name: "React",
+        color: "react-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+    ],
+
+    image: goodreads,
+    source_code_link: "https://goodreads-app.vercel.app/",
+  },
+  {
+    name: "Task Management System",
+    tags: [
+      {
+        name: "React",
+        color: "react-text-gradient",
+      },
+    ],
+    image: task,
+    source_code_link: "https://dotask-eight.vercel.app/",
+  },
+  {
+    name: "Movie App",
+    tags: [
+      {
+        name: "React",
+        color: "react-text-gradient",
+      },
+    ],
+    image: movieapp,
+    source_code_link: "https://movie-self-seven.vercel.app/",
+  },
+  {
+    name: "Pop Corn",
+    tags: [
+      {
+        name: "React",
+        color: "react-text-gradient",
+      },
+    ],
+    image: popcorn,
+    source_code_link: "https://popcorn-gray.vercel.app/",
+  },
+  {
     name: "Calorie Tracker",
     tags: [
       {
@@ -203,6 +365,44 @@ const projects = [
     ],
     image: calorieTracker,
     source_code_link: "https://calorie-tracker-fysumk1jo-fatmawafy.vercel.app/",
+  },
+  {
+    name: "E-commerce",
+    tags: [
+      {
+        name: "HTML5",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "css3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: ecommerce,
+    source_code_link: "https://shista.vercel.app/",
+  },
+  {
+    name: "Forkify",
+    tags: [
+      {
+        name: "HTML5",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "css3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: forkify,
+    source_code_link: "https://forkify-rosy.vercel.app/",
   },
   {
     name: "SpaceX",

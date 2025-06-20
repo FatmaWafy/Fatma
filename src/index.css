@@ -89,6 +89,14 @@
   -webkit-text-fill-color: transparent;
 }
 
+.violet-text-gradient {
+  background: #804dee;
+  background: -webkit-linear-gradient(to top, #804dee, #c138ef);
+  background: linear-gradient(to top, #804dee, #c138ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .canvas-loader {
   font-size: 10px;
   width: 1em;

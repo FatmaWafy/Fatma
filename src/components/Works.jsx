@@ -13,33 +13,36 @@ import "slick-carousel/slick/slick-theme.css";
 const ProjectCard = ({ index, name, tags, image, source_code_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
-      <div className='bg-tertiary p-5 rounded-xl'>
-        <div className='relative  rounded-xl group overflow-hidden'>
-          <img
-            src={image}
-            alt={name}
-            className='object-cover rounded-xl transition group-hover:scale-105'
-          />
-
-          <div className='absolute inset-0 hidden group-hover:flex justify-center items-center transition bg-zinc-950/50 rounded-xl '>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='bg-[#151030] w-10 h-10 rounded-xl flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={eye}
-                alt='eye'
-                className='w-6 h-6 object-contain transition scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-100 '
-              />
+      <div className='bg-tertiary p-5 rounded-xl flex flex-col justify-between h-[260px]'>
+        <div>
+          <div className='relative rounded-xl group overflow-hidden h-[140px]'>
+            <img
+              src={image}
+              alt={name}
+              className='object-cover w-full h-full transition group-hover:scale-105 rounded-xl'
+            />
+            <div className='absolute inset-0 hidden group-hover:flex justify-center items-center transition bg-zinc-950/50 rounded-xl'>
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='bg-[#151030] w-10 h-10 rounded-xl flex justify-center items-center cursor-pointer'
+              >
+                <img
+                  src={eye}
+                  alt='eye'
+                  className='w-6 h-6 object-contain transition scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-100'
+                />
+              </div>
             </div>
+          </div>
+
+          <div className='mt-3'>
+            <h3 className='text-white font-bold text-[16px] leading-5 line-clamp-2 h-[42px]'>
+              {name}
+            </h3>
           </div>
         </div>
 
-        <div className='mt-3'>
-          <h3 className='text-white font-bold text-[19px]'>{name}</h3>
-        </div>
-
-        <div className='mt-3 flex flex-wrap gap-2 h-[40px]'>
+        <div className='mt-3 flex flex-wrap gap-2 h-[40px] items-end'>
           {tags.map((tag) => (
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
